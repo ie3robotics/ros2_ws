@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
+from sensor_msgs.msg import Joy
 from Transbot_Lib import Transbot
 import serial
 import time
@@ -13,11 +14,18 @@ class MotorController(Node):
             Twist,
             '/cmd_vel',
             self.cmd_vel_callback,
-            10)
+            10
+        )
         self.subscription_distance = self.create_subscription(
             Twist,
             '/distance',
             self.distance_callback,
+            10
+        )
+        self.subscription_joy = self.create_subscription(
+            Joy,
+            '/joy',
+            self.joy_callback,
             10
         )
         
@@ -27,7 +35,30 @@ class MotorController(Node):
         self.distance = None  # Initialize distance attribute
         
 
-        self.get_logger().info("Motor Controller node started1")
+        self.get_logger().info("Motor Controller node started")
+
+    def joy_callback(self, msg):
+        fowaxis = msg.axes[1]
+        turnaxis = msg.axes[0]
+
+        if self.distance < 35.0 and msg.axes[1] > 0.0:
+                self.set_car_motion(-100, -100)
+                time.sleep(0.5)
+                self.set_car_motion(-100,100)
+                time.sleep(0.5)
+
+        self.get_logger().info("fowaxis = " + str(fowaxis))
+        self.get_logger().info("turnaxis = " + str(turnaxis))
+
+        left_motor_speed = (fowaxis * 100) - (turnaxis * 100)
+        right_motor_speed = (fowaxis * 100) + (turnaxis * 100)
+
+        left_motor_speed = max(min(left_motor_speed, 100), -100)
+        right_motor_speed = max(min(right_motor_speed, 100), -100)
+
+        self.set_car_motion(left_motor_speed, right_motor_speed)
+
+        
 
     def cmd_vel_callback(self, msg):
         self.get_logger().info("Received Twist message with linear x: " + str(msg.linear.x))

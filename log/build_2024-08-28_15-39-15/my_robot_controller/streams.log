@@ -1,0 +1,83 @@
+[3.564s] Invoking command in '/home/ros2/ros2_ws/src/my_robot_controller': PYTHONPATH=/home/ros2/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/ros2/ros2_ws/build/my_robot_controller/build install --record /home/ros2/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed install_data
+[4.101s] running egg_info
+[4.102s] creating ../../build/my_robot_controller/my_robot_controller.egg-info
+[4.102s] writing ../../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO
+[4.103s] writing dependency_links to ../../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt
+[4.103s] writing entry points to ../../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt
+[4.104s] writing requirements to ../../build/my_robot_controller/my_robot_controller.egg-info/requires.txt
+[4.104s] writing top-level names to ../../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt
+[4.104s] writing manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[4.111s] reading manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[4.113s] writing manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[4.113s] running build
+[4.113s] running build_py
+[4.114s] creating /home/ros2/ros2_ws/build/my_robot_controller/build
+[4.114s] creating /home/ros2/ros2_ws/build/my_robot_controller/build/lib
+[4.114s] creating /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.114s] copying my_robot_controller/camera_control.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.117s] copying my_robot_controller/__init__.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.117s] copying my_robot_controller/seriallist.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.118s] copying my_robot_controller/keyboard_capture.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.118s] copying my_robot_controller/transbot_keyboard.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.119s] copying my_robot_controller/motor_controller.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.119s] copying my_robot_controller/distance.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.120s] copying my_robot_controller/my_first_node.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.121s] copying my_robot_controller/preset_node.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.122s] copying my_robot_controller/pose_subscriber.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.123s] copying my_robot_controller/face_tracker_node.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.124s] copying my_robot_controller/draw_circle.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.125s] copying my_robot_controller/serial_test.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.126s] copying my_robot_controller/turtle_controller.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[4.127s] running install
+[4.128s] running install_lib
+[4.130s] creating /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.130s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/camera_control.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.130s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/__init__.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.130s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/seriallist.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.131s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/keyboard_capture.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.131s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/transbot_keyboard.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.131s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/motor_controller.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.131s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/distance.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.132s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/my_first_node.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.132s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/preset_node.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.132s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/pose_subscriber.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.133s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/face_tracker_node.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.133s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/draw_circle.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.133s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/serial_test.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.133s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/turtle_controller.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[4.135s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/camera_control.py to camera_control.cpython-310.pyc
+[4.136s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__init__.py to __init__.cpython-310.pyc
+[4.137s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/seriallist.py to seriallist.cpython-310.pyc
+[4.138s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/keyboard_capture.py to keyboard_capture.cpython-310.pyc
+[4.139s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/transbot_keyboard.py to transbot_keyboard.cpython-310.pyc
+[4.140s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/motor_controller.py to motor_controller.cpython-310.pyc
+[4.142s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/distance.py to distance.cpython-310.pyc
+[4.143s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/my_first_node.py to my_first_node.cpython-310.pyc
+[4.144s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/preset_node.py to preset_node.cpython-310.pyc
+[4.145s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/pose_subscriber.py to pose_subscriber.cpython-310.pyc
+[4.145s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/face_tracker_node.py to face_tracker_node.cpython-310.pyc
+[4.147s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/draw_circle.py to draw_circle.cpython-310.pyc
+[4.148s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/serial_test.py to serial_test.cpython-310.pyc
+[4.149s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/turtle_controller.py to turtle_controller.cpython-310.pyc
+[4.151s] running install_data
+[4.151s] creating /home/ros2/ros2_ws/install/my_robot_controller/share/ament_index
+[4.151s] creating /home/ros2/ros2_ws/install/my_robot_controller/share/ament_index/resource_index
+[4.151s] creating /home/ros2/ros2_ws/install/my_robot_controller/share/ament_index/resource_index/packages
+[4.151s] copying resource/my_robot_controller -> /home/ros2/ros2_ws/install/my_robot_controller/share/ament_index/resource_index/packages
+[4.152s] copying package.xml -> /home/ros2/ros2_ws/install/my_robot_controller/share/my_robot_controller
+[4.152s] running install_egg_info
+[4.156s] Copying ../../build/my_robot_controller/my_robot_controller.egg-info to /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info
+[4.158s] running install_scripts
+[4.204s] Installing camera_control script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[4.204s] Installing distance script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[4.204s] Installing draw_circle script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[4.205s] Installing face_tracker_node script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[4.205s] Installing keyboard_capture script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[4.205s] Installing motor_controller script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[4.205s] Installing pose_subscriber script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[4.205s] Installing preset_node script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[4.206s] Installing serial_test script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[4.206s] Installing test_node script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[4.206s] Installing turtle_controller script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[4.207s] writing list of installed files to '/home/ros2/ros2_ws/build/my_robot_controller/install.log'
+[4.310s] Invoked command in '/home/ros2/ros2_ws/src/my_robot_controller' returned '0': PYTHONPATH=/home/ros2/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/ros2/ros2_ws/build/my_robot_controller/build install --record /home/ros2/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed install_data

@@ -3,6 +3,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
+from sensor_msgs.msg import Joy
 from std_msgs.msg import String
 import cv2
 import numpy as np
@@ -31,10 +32,30 @@ class CamController(Node):
         self.listener = keyboard.Listener(on_press=self.on_press)
         self.listener.start()
 
+        self.subscription_joy = self.create_subscription(
+            Joy,
+            '/joy',
+            self.joy_callback,
+            10
+        )
+
+    def joy_callback(self, msg):
+
+        turn_axis = -msg.axes[2]  # Left/right
+        up_down_axis = msg.axes[3]  # Up/down
+
+        # Adjust the servo positions based on joystick input
+        self.pwm_servo_x = np.clip(self.pwm_servo_x + (-turn_axis * 2), 0, 180)
+        self.pwm_servo_y = np.clip(self.pwm_servo_y + (up_down_axis * 2), 0, 180)
+
+        # Update servo positions
+        self.bot.set_pwm_servo(1, int(self.pwm_servo_x))
+        self.bot.set_pwm_servo(2, int(self.pwm_servo_y))
+
 
     def init_servos(self):
-        self.bot.set_pwm_servo(1, self.pwm_servo_x)
-        self.bot.set_pwm_servo(2, self.pwm_servo_y)
+        self.bot.set_pwm_servo(1, 90)
+        self.bot.set_pwm_servo(2, 25)
         self.get_logger().info(f'Servos initialized: Servo1={self.pwm_servo_x}, Servo2={self.pwm_servo_y}')
 
     def on_press(self, key):
