@@ -1,0 +1,5 @@
+  File "/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/draw_circle.py", line 38
+    elif self.cuurent_key != 'w' or self.cuurent_key != 's' 
+                                                            ^
+SyntaxError: expected ':'
+
