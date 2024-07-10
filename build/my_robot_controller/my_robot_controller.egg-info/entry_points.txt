@@ -1,4 +1,5 @@
 [console_scripts]
+distance = my_robot_controller.distance:main
 draw_circle = my_robot_controller.draw_circle:main
 face_tracker_node = my_robot_controller.face_tracker_node:main
 pose_subscriber = my_robot_controller.pose_subscriber:main

@@ -24,7 +24,9 @@ setup(
             "draw_circle = my_robot_controller.draw_circle:main",
             "pose_subscriber = my_robot_controller.pose_subscriber:main",
             "turtle_controller = my_robot_controller.turtle_controller:main",
-            "face_tracker_node = my_robot_controller.face_tracker_node:main"
+            "face_tracker_node = my_robot_controller.face_tracker_node:main",
+            "distance = my_robot_controller.distance:main"
+
         ],
         
     },
