@@ -1,0 +1,31 @@
+[2.908s] Invoking command in '/home/ros2/ros2_ws/src/my_robot_controller': PYTHONPATH=/home/ros2/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/ros2/ros2_ws/build/my_robot_controller/build install --record /home/ros2/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed install_data
+[3.411s] running egg_info
+[3.413s] writing ../../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO
+[3.414s] writing dependency_links to ../../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt
+[3.415s] writing entry points to ../../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt
+[3.416s] writing requirements to ../../build/my_robot_controller/my_robot_controller.egg-info/requires.txt
+[3.416s] writing top-level names to ../../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt
+[3.419s] reading manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[3.421s] writing manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[3.421s] running build
+[3.421s] running build_py
+[3.422s] copying my_robot_controller/motor_controller.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[3.423s] running install
+[3.424s] running install_lib
+[3.426s] copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/motor_controller.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[3.427s] byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/motor_controller.py to motor_controller.cpython-310.pyc
+[3.428s] Sorry: IndentationError: unexpected indent (motor_controller.py, line 24)
+[3.428s] running install_data
+[3.429s] running install_egg_info
+[3.432s] removing '/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[3.433s] Copying ../../build/my_robot_controller/my_robot_controller.egg-info to /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info
+[3.435s] running install_scripts
+[3.481s] Installing distance script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[3.481s] Installing draw_circle script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[3.482s] Installing face_tracker_node script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[3.482s] Installing motor_controller script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[3.482s] Installing pose_subscriber script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[3.483s] Installing test_node script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[3.483s] Installing turtle_controller script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[3.484s] writing list of installed files to '/home/ros2/ros2_ws/build/my_robot_controller/install.log'
+[3.556s] Invoked command in '/home/ros2/ros2_ws/src/my_robot_controller' returned '0': PYTHONPATH=/home/ros2/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/ros2/ros2_ws/build/my_robot_controller/build install --record /home/ros2/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed install_data

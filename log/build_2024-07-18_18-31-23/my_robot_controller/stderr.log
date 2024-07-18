@@ -1,0 +1,5 @@
+  File "/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/motor_controller.py", line 27
+    elif msg.linear.x = 0.0:
+         ^^^^^^^^^^^^
+SyntaxError: cannot assign to attribute here. Maybe you meant '==' instead of '='?
+

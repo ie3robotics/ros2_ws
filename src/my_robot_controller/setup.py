@@ -25,7 +25,8 @@ setup(
             "pose_subscriber = my_robot_controller.pose_subscriber:main",
             "turtle_controller = my_robot_controller.turtle_controller:main",
             "face_tracker_node = my_robot_controller.face_tracker_node:main",
-            "distance = my_robot_controller.distance:main"
+            "distance = my_robot_controller.distance:main",
+            "motor_controller = my_robot_controller.motor_controller:main"
 
         ],
         

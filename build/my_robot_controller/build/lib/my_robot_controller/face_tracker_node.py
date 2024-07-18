@@ -27,7 +27,7 @@ class CameraControlNode(Node):
         self.capture = cv2.VideoCapture(0)
 
         # Create a timer to periodically call the `show_camera_feed` method
-        self.timer = self.create_timer(0.05, self.show_camera_feed)
+        self.timer = self.create_timer(0.00001, self.show_camera_feed)
 
         # Start keyboard listener
         self.listener = keyboard.Listener(on_press=self.on_press)
