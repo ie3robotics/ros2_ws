@@ -1,0 +1,101 @@
+[0.000000] (-) TimerEvent: {}
+[0.001053] (my_robot_controller) JobQueued: {'identifier': 'my_robot_controller', 'dependencies': OrderedDict()}
+[0.001918] (teleop_twist_keyboard) JobQueued: {'identifier': 'teleop_twist_keyboard', 'dependencies': OrderedDict()}
+[0.002405] (my_robot_controller) JobStarted: {'identifier': 'my_robot_controller'}
+[0.028430] (teleop_twist_keyboard) JobStarted: {'identifier': 'teleop_twist_keyboard'}
+[0.099010] (-) TimerEvent: {}
+[0.199855] (-) TimerEvent: {}
+[0.300468] (-) TimerEvent: {}
+[0.401096] (-) TimerEvent: {}
+[0.501865] (-) TimerEvent: {}
+[0.602865] (-) TimerEvent: {}
+[0.703957] (-) TimerEvent: {}
+[0.804979] (-) TimerEvent: {}
+[0.905894] (-) TimerEvent: {}
+[1.006869] (-) TimerEvent: {}
+[1.107875] (-) TimerEvent: {}
+[1.209242] (-) TimerEvent: {}
+[1.310291] (-) TimerEvent: {}
+[1.411331] (-) TimerEvent: {}
+[1.512380] (-) TimerEvent: {}
+[1.613426] (-) TimerEvent: {}
+[1.714830] (-) TimerEvent: {}
+[1.816517] (-) TimerEvent: {}
+[1.917560] (-) TimerEvent: {}
+[2.018583] (-) TimerEvent: {}
+[2.119629] (-) TimerEvent: {}
+[2.220695] (-) TimerEvent: {}
+[2.321755] (-) TimerEvent: {}
+[2.422799] (-) TimerEvent: {}
+[2.523844] (-) TimerEvent: {}
+[2.624919] (-) TimerEvent: {}
+[2.725994] (-) TimerEvent: {}
+[2.827057] (-) TimerEvent: {}
+[2.928148] (-) TimerEvent: {}
+[3.029256] (-) TimerEvent: {}
+[3.032006] (teleop_twist_keyboard) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/teleop_twist_keyboard', 'build', '--build-base', '/home/ros2/ros2_ws/build/teleop_twist_keyboard/build', 'install', '--record', '/home/ros2/ros2_ws/build/teleop_twist_keyboard/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ros2/ros2_ws/src/teleop_twist_keyboard-dashing', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'txst-robotics', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/txst-robotics', 'OLDPWD': '/home/ros2/ros2_ws/src/my_robot_controller/my_robot_controller', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2180', 'SYSTEMD_EXEC_PID': '2351', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2895', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/ros2/ros2_ws/install:/home/txst-robotics/ros2_ws1/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'txst-robotics', 'JOURNAL_STREAM': '8:45257', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'txst-robotics', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/txst-robotics/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/txst-robotics-desktop:@/tmp/.ICE-unix/2327,unix/txst-robotics-desktop:/tmp/.ICE-unix/2327', 'INVOCATION_ID': '5a129b8e4f7a487b9f5bd839cc6638b6', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ros2/ros2_ws/install/teleop_twist_keyboard:/home/ros2/ros2_ws/install/my_robot_controller:/home/txst-robotics/ros2_ws1/install/robot:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:65397bb3-3315-4187-bb0b-cf36610f884e', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ros2/ros2_ws/build/teleop_twist_keyboard', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ros2/ros2_ws/build/teleop_twist_keyboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_ws/install/teleop_twist_keyboard/lib/python3.10/site-packages:/home/ros2/ros2_ws/install/teleop_twist_keyboard/lib/python3.10/site-packages:/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/txst-robotics/ros2_ws1/install/robot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.108623] (my_robot_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_robot_controller', 'build', '--build-base', '/home/ros2/ros2_ws/build/my_robot_controller/build', 'install', '--record', '/home/ros2/ros2_ws/build/my_robot_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ros2/ros2_ws/src/my_robot_controller', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'txst-robotics', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/txst-robotics', 'OLDPWD': '/home/ros2/ros2_ws/src/my_robot_controller/my_robot_controller', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2180', 'SYSTEMD_EXEC_PID': '2351', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2895', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/ros2/ros2_ws/install:/home/txst-robotics/ros2_ws1/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'txst-robotics', 'JOURNAL_STREAM': '8:45257', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'txst-robotics', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/txst-robotics/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/txst-robotics-desktop:@/tmp/.ICE-unix/2327,unix/txst-robotics-desktop:/tmp/.ICE-unix/2327', 'INVOCATION_ID': '5a129b8e4f7a487b9f5bd839cc6638b6', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ros2/ros2_ws/install/teleop_twist_keyboard:/home/ros2/ros2_ws/install/my_robot_controller:/home/txst-robotics/ros2_ws1/install/robot:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:65397bb3-3315-4187-bb0b-cf36610f884e', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ros2/ros2_ws/build/my_robot_controller', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ros2/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/ros2/ros2_ws/install/teleop_twist_keyboard/lib/python3.10/site-packages:/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/txst-robotics/ros2_ws1/install/robot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.129423] (-) TimerEvent: {}
+[3.230223] (-) TimerEvent: {}
+[3.330845] (-) TimerEvent: {}
+[3.431449] (-) TimerEvent: {}
+[3.532063] (-) TimerEvent: {}
+[3.632682] (-) TimerEvent: {}
+[3.640089] (my_robot_controller) StdoutLine: {'line': b'running egg_info\n'}
+[3.641512] (my_robot_controller) StdoutLine: {'line': b'writing ../../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO\n'}
+[3.642147] (my_robot_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt\n'}
+[3.642579] (my_robot_controller) StdoutLine: {'line': b'writing entry points to ../../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt\n'}
+[3.642844] (my_robot_controller) StdoutLine: {'line': b'writing requirements to ../../build/my_robot_controller/my_robot_controller.egg-info/requires.txt\n'}
+[3.643096] (my_robot_controller) StdoutLine: {'line': b'writing top-level names to ../../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt\n'}
+[3.649605] (my_robot_controller) StdoutLine: {'line': b"reading manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[3.651442] (my_robot_controller) StdoutLine: {'line': b"writing manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[3.651736] (my_robot_controller) StdoutLine: {'line': b'running build\n'}
+[3.651897] (my_robot_controller) StdoutLine: {'line': b'running build_py\n'}
+[3.652761] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/serial_test.py -> /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[3.653606] (my_robot_controller) StdoutLine: {'line': b'running install\n'}
+[3.654261] (my_robot_controller) StdoutLine: {'line': b'running install_lib\n'}
+[3.656083] (my_robot_controller) StdoutLine: {'line': b'copying /home/ros2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/serial_test.py -> /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[3.657613] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/serial_test.py to serial_test.cpython-310.pyc\n'}
+[3.659048] (my_robot_controller) StdoutLine: {'line': b'running install_data\n'}
+[3.659310] (my_robot_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.663460] (my_robot_controller) StdoutLine: {'line': b"removing '/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[3.663992] (my_robot_controller) StdoutLine: {'line': b'Copying ../../build/my_robot_controller/my_robot_controller.egg-info to /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info\n'}
+[3.666091] (my_robot_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[3.707117] (my_robot_controller) StdoutLine: {'line': b'Installing distance script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[3.707605] (my_robot_controller) StdoutLine: {'line': b'Installing draw_circle script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[3.707874] (my_robot_controller) StdoutLine: {'line': b'Installing face_tracker_node script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[3.708149] (my_robot_controller) StdoutLine: {'line': b'Installing motor_controller script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[3.708396] (my_robot_controller) StdoutLine: {'line': b'Installing pose_subscriber script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[3.708771] (my_robot_controller) StdoutLine: {'line': b'Installing serial_test script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[3.709037] (my_robot_controller) StdoutLine: {'line': b'Installing test_node script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[3.709271] (my_robot_controller) StdoutLine: {'line': b'Installing turtle_controller script to /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[3.710333] (my_robot_controller) StdoutLine: {'line': b"writing list of installed files to '/home/ros2/ros2_ws/build/my_robot_controller/install.log'\n"}
+[3.732773] (-) TimerEvent: {}
+[3.776749] (my_robot_controller) CommandEnded: {'returncode': 0}
+[3.809074] (my_robot_controller) JobEnded: {'identifier': 'my_robot_controller', 'rc': 0}
+[3.824742] (teleop_twist_keyboard) StdoutLine: {'line': b'running egg_info\n'}
+[3.827125] (teleop_twist_keyboard) StdoutLine: {'line': b'writing ../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/PKG-INFO\n'}
+[3.828065] (teleop_twist_keyboard) StdoutLine: {'line': b'writing dependency_links to ../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/dependency_links.txt\n'}
+[3.828609] (teleop_twist_keyboard) StdoutLine: {'line': b'writing entry points to ../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/entry_points.txt\n'}
+[3.829199] (teleop_twist_keyboard) StdoutLine: {'line': b'writing requirements to ../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/requires.txt\n'}
+[3.829504] (teleop_twist_keyboard) StdoutLine: {'line': b'writing top-level names to ../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/top_level.txt\n'}
+[3.832852] (-) TimerEvent: {}
+[3.834771] (teleop_twist_keyboard) StdoutLine: {'line': b"reading manifest file '../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/SOURCES.txt'\n"}
+[3.835429] (teleop_twist_keyboard) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[3.841763] (teleop_twist_keyboard) StdoutLine: {'line': b"writing manifest file '../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/SOURCES.txt'\n"}
+[3.842426] (teleop_twist_keyboard) StdoutLine: {'line': b'running build\n'}
+[3.842733] (teleop_twist_keyboard) StdoutLine: {'line': b'running build_py\n'}
+[3.843033] (teleop_twist_keyboard) StdoutLine: {'line': b'running install\n'}
+[3.844079] (teleop_twist_keyboard) StdoutLine: {'line': b'running install_lib\n'}
+[3.849246] (teleop_twist_keyboard) StdoutLine: {'line': b'running install_data\n'}
+[3.849711] (teleop_twist_keyboard) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.858392] (teleop_twist_keyboard) StdoutLine: {'line': b"removing '/home/ros2/ros2_ws/install/teleop_twist_keyboard/lib/python3.10/site-packages/teleop_twist_keyboard-2.4.0-py3.10.egg-info' (and everything under it)\n"}
+[3.859992] (teleop_twist_keyboard) StdoutLine: {'line': b'Copying ../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info to /home/ros2/ros2_ws/install/teleop_twist_keyboard/lib/python3.10/site-packages/teleop_twist_keyboard-2.4.0-py3.10.egg-info\n'}
+[3.863879] (teleop_twist_keyboard) StdoutLine: {'line': b'running install_scripts\n'}
+[3.933132] (-) TimerEvent: {}
+[3.934432] (teleop_twist_keyboard) StdoutLine: {'line': b'Installing teleop_twist_keyboard script to /home/ros2/ros2_ws/install/teleop_twist_keyboard/lib/teleop_twist_keyboard\n'}
+[3.935722] (teleop_twist_keyboard) StdoutLine: {'line': b"writing list of installed files to '/home/ros2/ros2_ws/build/teleop_twist_keyboard/install.log'\n"}
+[4.033407] (-) TimerEvent: {}
+[4.058156] (teleop_twist_keyboard) CommandEnded: {'returncode': 0}
+[4.082360] (teleop_twist_keyboard) JobEnded: {'identifier': 'teleop_twist_keyboard', 'rc': 0}
+[4.085304] (-) EventReactorShutdown: {}

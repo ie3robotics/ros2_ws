@@ -6,6 +6,7 @@
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/pose_subscriber.py
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/face_tracker_node.py
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/draw_circle.py
+/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/serial_test.py
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/turtle_controller.py
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__pycache__/__init__.cpython-310.pyc
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__pycache__/transbot_keyboard.cpython-310.pyc
@@ -15,6 +16,7 @@
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__pycache__/pose_subscriber.cpython-310.pyc
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__pycache__/face_tracker_node.cpython-310.pyc
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__pycache__/draw_circle.cpython-310.pyc
+/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__pycache__/serial_test.cpython-310.pyc
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__pycache__/turtle_controller.cpython-310.pyc
 /home/ros2/ros2_ws/install/my_robot_controller/share/ament_index/resource_index/packages/my_robot_controller
 /home/ros2/ros2_ws/install/my_robot_controller/share/my_robot_controller/package.xml
@@ -30,5 +32,6 @@
 /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller/face_tracker_node
 /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller/motor_controller
 /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller/pose_subscriber
+/home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller/serial_test
 /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller/test_node
 /home/ros2/ros2_ws/install/my_robot_controller/lib/my_robot_controller/turtle_controller

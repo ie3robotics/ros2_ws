@@ -8,9 +8,21 @@ import cv2
 import numpy as np
 from Transbot_Lib import Transbot
 from pynput import keyboard
+import Jetson.GPIO as GPIO
+import time
+from hcsr04 import HCSR04
 
+# Pin Definitions
+TRIGGER_PIN = 18  # GPIO01
+ECHO_PIN = 24     # GPIO11
+
+# Set up the GPIO pins
+GPIO.setmode(GPIO.BCM)  # BCM pin-numbering scheme from Jetson.GPIO library
+GPIO.setup(TRIGGER_PIN, GPIO.OUT)
+GPIO.setup(ECHO_PIN, GPIO.IN)
+
+sensor = HCSR04(TRIGGER_PIN, ECHO_PIN)
 class CameraControlNode(Node):
-
 
     def __init__(self):
         super().__init__('distance')
@@ -21,8 +33,8 @@ class CameraControlNode(Node):
         # Parameters and initial setup
         self.last_mean = 0
         self.bot = Transbot()  # Initialize the bot here
-        self.pwm_servo_x =90
-        self.pwm_servo_y =90
+        self.pwm_servo_x = 90
+        self.pwm_servo_y = 90
         self.init_servos()
 
         # Start video capture
@@ -44,6 +56,8 @@ class CameraControlNode(Node):
         try:
             if key == keyboard.Key.up:
                 self.pwm_servo_y = np.clip(self.pwm_servo_y + 5, 0, 180)
+                distance = sensor.distance_cm()
+                self.get_logger().info(f'Distance (cm) = {distance}')
             elif key == keyboard.Key.down:
                 self.pwm_servo_y = np.clip(self.pwm_servo_y - 5, 0, 180)
             elif key == keyboard.Key.right:
@@ -59,22 +73,23 @@ class CameraControlNode(Node):
 
     def show_camera_feed(self):
         ret, frame = self.capture.read()
+
         if not ret:
             self.get_logger().error('Failed to capture image')
             return
-        cv2.imshow('frame',frame)
+
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         result = np.abs(np.mean(gray) - self.last_mean)
-        print(result)
         if result > 0.3:
-            print("Motion detected!")
-            print("Started recording.")
-        self.last_mean= np.mean(gray)
-      
-
+            self.get_logger().info("Motion detected! Started recording.")
+        self.last_mean = np.mean(gray)
 
         cv2.imshow('Camera Feed', frame)
         cv2.waitKey(1)
+
+
+
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -84,6 +99,6 @@ def main(args=None):
     cv2.destroyAllWindows()
     rclpy.shutdown()
 
+
 if __name__ == '__main__':
     main()
-

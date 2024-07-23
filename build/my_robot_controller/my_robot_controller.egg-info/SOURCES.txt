@@ -15,6 +15,7 @@ my_robot_controller/face_tracker_node.py
 my_robot_controller/motor_controller.py
 my_robot_controller/my_first_node.py
 my_robot_controller/pose_subscriber.py
+my_robot_controller/serial_test.py
 my_robot_controller/transbot_keyboard.py
 my_robot_controller/turtle_controller.py
 resource/my_robot_controller
