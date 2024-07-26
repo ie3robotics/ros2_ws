@@ -1,4 +1,5 @@
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__init__.py
+/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/seriallist.py
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/transbot_keyboard.py
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/motor_controller.py
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/distance.py
@@ -9,6 +10,7 @@
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/serial_test.py
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/turtle_controller.py
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__pycache__/__init__.cpython-310.pyc
+/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__pycache__/seriallist.cpython-310.pyc
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__pycache__/transbot_keyboard.cpython-310.pyc
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__pycache__/motor_controller.cpython-310.pyc
 /home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__pycache__/distance.cpython-310.pyc
