@@ -1,5 +1,0 @@
-  File "/home/ros2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/distance.py", line 72
-    break
-    ^^^^^
-SyntaxError: 'break' outside loop
-

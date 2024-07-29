@@ -27,8 +27,10 @@ setup(
             "face_tracker_node = my_robot_controller.face_tracker_node:main",
             "distance = my_robot_controller.distance:main",
             "motor_controller = my_robot_controller.motor_controller:main",
-            "serial_test = my_robot_controller.serial_test:main"
-
+            "serial_test = my_robot_controller.serial_test:main",
+            "keyboard_capture = my_robot_controller.keyboard_capture:main",
+            "preset_node = my_robot_controller.preset_node:main",
+            "camera_control = my_robot_controller.camera_control:main"
         ],
         
     },

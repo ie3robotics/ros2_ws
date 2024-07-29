@@ -9,12 +9,15 @@ setup.py
 ../../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt
 ../../build/my_robot_controller/my_robot_controller.egg-info/zip-safe
 my_robot_controller/__init__.py
+my_robot_controller/camera_control.py
 my_robot_controller/distance.py
 my_robot_controller/draw_circle.py
 my_robot_controller/face_tracker_node.py
+my_robot_controller/keyboard_capture.py
 my_robot_controller/motor_controller.py
 my_robot_controller/my_first_node.py
 my_robot_controller/pose_subscriber.py
+my_robot_controller/preset_node.py
 my_robot_controller/serial_test.py
 my_robot_controller/seriallist.py
 my_robot_controller/transbot_keyboard.py

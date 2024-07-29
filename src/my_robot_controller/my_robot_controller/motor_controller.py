@@ -2,42 +2,69 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from Transbot_Lib import Transbot
+import serial
+import time
 
 class MotorController(Node):
 
     def __init__(self):
         super().__init__("motor_controller")
-        self.subscription = self.create_subscription(
+        self.subscription_cmd_vel = self.create_subscription(
             Twist,
             '/cmd_vel',
-            self.listener_callback,
+            self.cmd_vel_callback,
             10)
+        self.subscription_distance = self.create_subscription(
+            Twist,
+            '/distance',
+            self.distance_callback,
+            10
+        )
         
         self.bot = Transbot()  # Initialize the bot here
         self.speedl = 0
         self.speedr = 0
-        self.get_logger().info("Motor Controller node started")
+        self.distance = None  # Initialize distance attribute
+        
 
-    def listener_callback(self, msg):
+        self.get_logger().info("Motor Controller node started1")
+
+    def cmd_vel_callback(self, msg):
         self.get_logger().info("Received Twist message with linear x: " + str(msg.linear.x))
+        self.get_logger().info("Angular.z: " + str(msg.angular.z))
+        
+        if self.distance is not None:
+            self.get_logger().info("Distance: " + str(self.distance))
 
-        if msg.linear.x != 0.0 and msg.angular.z == 0.0:  # Forward or backward
-            speed = msg.linear.x * 100  # Adjust the scaling factor as necessary
-            self.speedl = speed
-            self.speedr = speed
-        elif msg.linear.x == 0.0 and msg.angular.z != 0.0:  # Left or right turn
-            speed = msg.angular.z * 50  # Adjust the scaling factor as necessary
-            self.speedl = -speed
-            self.speedr = speed
-        else:  # Stop
-            self.speedl = 0
-            self.speedr = 0
+            if self.distance < 35.0 and msg.linear.x > 0.0:
+                self.speedl = 0
+                self.speedr = 0
+                self.set_car_motion(-100, -100)
+                time.sleep(0.5)
+                self.set_car_motion(-100,100)
+                time.sleep(0.5)
 
+            elif msg.linear.x != 0.0 and msg.angular.z == 0.0:  # Forward or backward
+                speed = msg.linear.x * 100  # Adjust the scaling factor as necessary
+                self.speedl = speed - 1
+                self.speedr = speed
+            elif msg.linear.x == 0.0 and msg.angular.z != 0.0:  # Left or right turn
+                speed = msg.angular.z * 100  # Adjust the scaling factor as necessary
+                self.speedl = -speed
+                self.speedr = speed
+            else:  # Stop
+                self.speedl = 0
+                self.speedr = 0
 
-        self.set_car_motion(self.speedl, self.speedr)
+            self.set_car_motion(self.speedl, self.speedr)
+
+    def distance_callback(self, msg):
+        if msg.linear.y != 0:
+
+            self.distance = msg.linear.y
 
     def set_car_motion(self, A, B):
-        self.get_logger().info(f"Setting motor A(left) to {A} and motor B(right) to {B}")
+        self.get_logger().info(f"Setting motor A (left) to {A} and motor B (right) to {B}")
         if abs(A) >= 20 or abs(B) >= 20:
             self.bot.set_motor(1, A)
             self.bot.set_motor(2, B)
